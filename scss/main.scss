@@ -1,0 +1,332 @@
+@import 'config';
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+body { 
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+section{ 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    }
+
+.container { 
+    scroll-snap-type: y mandatory;
+    //overflow-y: scroll;
+    height: 100vh;
+    
+    header { 
+        display:flex;
+        position: absolute;
+        z-index: 1;
+        align-items: center;
+        bottom: 15vh;
+
+    }
+}
+
+    
+      
+
+.one {  
+    @include Background;
+    background: $primary-color;
+    color: set-text-color($primary-color);
+    line-height: 1;
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 10vh;
+    
+
+        h1 { 
+            margin: 2rem;
+            font-weight: 700;
+            
+            &.heading{
+                font-size: 2rem;
+                padding: 0.5rem;
+            }
+
+            &.text-secondary{
+                font-size: 2rem;
+            }
+        }
+
+
+        a { 
+            color: #fff;
+            text-decoration: none
+        }
+
+
+        .text-secondary {
+            color:set-2nd-color($primary-color);
+        }
+    }
+
+    .menu-navigation { 
+        display: flex;
+        list-style: none;
+    }
+
+    .nav-link{
+        padding: 10px 20px;
+        margin: 0 0.25rem;
+        background:rgba(142, 206, 243, 0.705);
+        border-radius:25px;
+        border-bottom: solid 2.75px rgba($pallete_0,0.3);
+        font-family: 'Readex Pro', sans-serif;
+        text-transform: uppercase;
+        font-size: 1.2.5rem;
+        font-weight: 600;
+        justify-content:center;
+        
+        
+
+        &:hover {
+            background:set-2nd-color($primary-color);
+            border-bottom: none;
+            @include Ease_out();
+        }
+    }
+
+    .heading {
+        align-items: center;
+        text-align: center;
+        position:fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 3; 
+        font-family: 'Readex Pro', sans-serif;
+        
+        }
+
+
+}
+     
+
+.two { 
+    background: #FFF;
+
+    .skill {
+        position:absolute;
+        align-items: center;
+        text-align: center;
+        top: 110vh;
+        z-index: 3; 
+        font-family: 'Readex Pro', sans-serif;
+        font-size: 1.2.5rem;
+        font-weight: 600;
+         }
+    
+   
+    .logos { 
+        padding: 2rem;
+    }
+    .skill-logo { 
+        background-color: rgba($pallete_3,0.068);
+        border-radius:30px;
+        border-bottom: solid 2.75px rgba($pallete_0,0.3);
+        padding:1rem;
+
+        &:hover {
+            background:rgba($pallete_0,0.08);
+            border-bottom: none;
+            @include Ease_out();
+        }
+    }
+
+    .about-button{
+        align-items: center;
+        justify-content: center;
+        z-index:5;
+        position:relative;
+        
+        a {
+            color: $pallete_0;
+            position:absolute;
+            border-right: 0%;
+            
+            &:hover {
+                color:set-2nd-color($primary-color);
+                @include Ease_out();
+            }
+
+        }
+        
+    }      
+        
+    .logos {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        flex-basis: 500px;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    img {
+        @include size;
+    }
+
+        .logos > * {
+            flex: 0 1 auto;
+
+        } 
+    
+    @import'tooltip';
+}
+
+
+.three{ 
+    border: 5px;
+    background: #fff;
+    
+    @import 's3';
+
+    overflow: hidden;
+}
+
+
+
+
+.four { 
+    display:inline-flex;
+    position: absolute;
+    background-image: url(../img/bg-bottom.png);
+    background-size: cover;
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    top:300vh;
+
+        h1{
+            font-family: 'Readex Pro', sans-serif;
+            text-transform: uppercase;
+            font-size: 2rem;
+            font-weight: 600;
+            color: white;
+            align-content: center;
+            margin-left: 6rem;
+            }
+
+        #main-footer{
+		    cursor: default;
+		    position: relative;
+		    margin: 0;
+		    width: calc(100% + (1rem * 2));
+		    min-width: 100%;
+            height:100%;
+		    z-index: 0;
+
+        .contact_ {
+            padding: 1rem;
+            flex-basis: 50%;
+            flex-grow: 1;
+            flex-shrink: 1;
+            margin-left: 7rem;
+            border-left: solid 2px rgba(#fff,0.12);
+
+            h3{
+                font-family: 'Readex Pro', sans-serif;
+                text-transform: uppercase;
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: white;
+            }
+            p { 
+                font-family: 'Readex Pro', sans-serif;
+                text-transform: uppercase;
+                font-size: 1rem;
+                font-weight: 500;
+                color: white;
+
+            }
+
+            .footer_ {
+                font-family: 'Readex Pro', sans-serif;
+                text-transform: uppercase;
+                font-size: 1rem;
+                font-weight: 500;
+                color: white;
+            }
+
+        
+        }
+
+    }
+}
+
+
+    
+
+
+
+    .icons {
+        margin-top: 1rem;
+
+        a{
+            position: absolute;
+            top:0;
+            left:0;
+            align-items: center;
+            float:left;
+            padding: 1.5rem;
+            
+            &:nth-child(1) {
+                color: $pallete_0;
+                left:0;
+                top: 475px;
+                position:fixed;
+                z-index: 3; 
+            }
+            &:nth-child(2) {
+                color: $pallete_0;
+                left:0;
+                top: 375px;
+                position:fixed;
+                z-index: 3;  
+            }
+            &:nth-child(3) {
+                color: $pallete_0;
+                left:0;
+                top: 275px;
+                position:fixed;
+                z-index: 3;  
+            }
+
+            &:hover {
+                color:set-2nd-color($primary-color);
+                @include Ease_out();
+            }
+
+        }
+
+
+    }
+
+   
+// About Me page
+@import 'about';
+
+// My Projects page
+@import 'work';
+
+// contact page
+@import 'contact';
+
+@import 'mobile';

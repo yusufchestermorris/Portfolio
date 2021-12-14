@@ -1,0 +1,122 @@
+@import'config';
+
+// About Me page
+// section{
+//     border:solid 5px red;
+// }
+
+#about-background {  
+    background-image: url('../img/bg-top.png');
+    color: set-text-color($primary-color);
+    background-repeat: no-repeat;
+    //border:solid 5px black;
+    height:40vh;
+    width:100%;
+
+    #ni{
+        position:relative;
+        top:0px;
+        transform:translateX(0) translateY(-50vh);
+    }
+
+
+
+
+}
+
+#b{
+    height:78%;
+    
+    .bio-info{
+        position:absolute;
+        align-items:center;
+        justify-items: center;
+        transform:translateX(0) translateY(-30vh);
+
+    }
+
+    #container-bio {
+        position:relative;
+        display: grid;
+        grid-gap: 30px;
+        justify-items: center;
+        align-items: center;
+        grid-template-areas:
+        'bioimage bio bio';
+        grid-template-columns: 1fr 1fr;
+
+        #yus{
+            grid-area: bioimage;
+            justify-items: center;
+            margin: auto;
+            border-radius: 50%;
+            border: solid 5px set-2nd-color($primary-color);
+        }
+
+        #item-2{ 
+            grid-area: bio;
+
+            h2{
+                font-size: 1.5rem;
+                text-align: center;
+                justify-items: center;
+                margin-right:20%;
+            }
+            
+            #statement {
+                font-size: 1.25rem;
+                max-width:80%;
+                font-family: 'Readex Pro', sans-serif;
+                font-weight: 400;
+                text-align: center;
+                justify-items: center;
+            }
+            
+        }
+
+}
+    
+
+}
+#skilled-in{
+
+    height:78%;
+
+    #sh {
+        position:absolute;
+        align-items: center;
+        text-align: center;
+        top: 0px;
+        margin-right:0%;
+        transform: translateX(0) translateY(10vh);
+        z-index: 3;
+        width:100%;
+        
+
+        #s{ position:relative;
+            align-items: center;
+            text-align: center;
+            font-family: 'Readex Pro', sans-serif;
+            font-size: 1.2.5rem;
+            font-weight: 600;
+
+        }
+         }
+}
+
+#contact-cloud9 {
+    position:absolute; 
+    top:199vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+

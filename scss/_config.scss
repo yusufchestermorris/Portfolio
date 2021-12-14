@@ -1,0 +1,120 @@
+//$primary-color: #161616;
+$primary-color: #FFF;
+//$secondary-color: #fff;
+$secondary-color: #161616;
+$pallete_0: #161616;
+$pallete_1: #B3ECA7;
+$pallete_2: #4AF1FF;
+$pallete_3: #0070A7;
+$pallete_4: #58C1FF;
+$pallete_5: #94E2D2;
+$pallete_6: #B1ECA8;
+$pallete_7: #79D9F2;
+
+$show-home-image: true;
+$home-image: url('../img/tw2.svg');
+$background-opacity: 0.9 ;
+
+
+//Tooltip Variables
+$scale: 1;
+$tooltip-color: rgba(142, 206, 243,.99);
+$arrow-size: 10px;
+$translate-y: 0;
+
+
+
+//Mixins
+
+@mixin size {
+    height:100px;
+    width:100px;
+}
+
+@mixin Ease_out {
+    transition: all 0.3s ease-out;
+}
+
+@mixin Background {
+    @if $show-home-image { 
+            &#background-image {
+                background: $home-image;
+                background-attachment: absolute;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+        
+        &:after {
+            content: '';
+            position: absolute;
+            object-fit: cover;
+            top: 0;
+            right: 0;
+            width: auto;
+            height: 100%;
+            z-index: -1;
+            background: rgba(set-text-color($secondary-color), $background-opacity);    
+         }
+        }
+        
+    }
+
+}
+
+
+// Set Text Colour 
+@function set-text-color($color) { 
+    @if (lightness($color) > 40) {
+        @return #000;
+    } @else { 
+        @return #fff;
+    }
+}
+
+@function set-2nd-color($color) { 
+    @if (lightness($color) > 40) {
+        @return darken(#B3ECA7,20);
+    } @else { 
+        @return #B3ECA7;
+    }
+}
+
+@function Nav-color($color) { 
+    @if (lightness($color) > 40) {
+        @return #0070A7;
+    } @else { 
+        @return #79D9F2;
+    }
+}
+
+// Media Query Mixins
+
+@mixin mediaSm{
+    @media screen and (max-width: 500px){
+        @content; 
+    }
+
+}
+
+
+@mixin mediaMd{
+    @media screen and (max-width: 768px){
+        @content; 
+    }
+
+}
+
+@mixin mediaL{
+    @media screen and (max-width: 1170px){
+        @content; 
+    }
+
+}
+
+@mixin mediaXL{
+    @media screen and (min-width: 1171px){
+        @content; 
+    }
+    
+
+}

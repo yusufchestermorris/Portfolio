@@ -1,0 +1,184 @@
+@import'config';
+$transition:150ms;
+
+#tableau:hover::before{  
+    content: attr(data-tooltip);
+    color: #fff;
+    padding: .6rem 1.2rem;
+    border-radius: 1rem;
+    text-align: center;
+    width: max-content;
+    max-width:100%;
+    background: $tooltip-color;
+    border-bottom: solid 2.75px rgba($pallete_0,0.2);
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: $transition;
+    }
+
+#tableau:hover::before,
+#tableau:hover::after {
+    position: absolute;
+    top: 80rem;
+    left: 33.3333%;
+    transform: translateX(33%) translateY($translate-y) scale($scale);
+    transition: $transition transform;
+    transform-origin: bottom center;
+}
+
+#excel:hover::before{   
+    content: attr(data-tooltip);
+    color: #fff;
+    padding: .6rem 1.2rem;
+    border-radius: 1rem;
+    text-align: center;
+    width: max-content;
+    max-width:100%;
+    background: $tooltip-color;
+    border-bottom: solid 2.75px rgba($pallete_0,0.2);
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: $transition;
+    }
+
+#excel:hover::before,
+#excel:hover::after {
+    position: absolute;
+    top: 80rem;
+    left: 50%;
+    transform: translateX(-50%) translateY($translate-y) scale($scale);
+    transition: $transition transform;
+    transform-origin: bottom center;
+}
+
+#pandas:hover::before{   
+    content: attr(data-tooltip);
+    color: #fff;
+    padding: .6rem 1.2rem;
+    border-radius: 1rem;
+    text-align: center;
+    width: max-content;
+    max-width:100%;
+    background: $tooltip-color;
+    border-bottom: solid 2.75px rgba($pallete_0,0.2);
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: $transition;
+    }
+
+#pandas:hover::before,
+#pandas:hover::after {
+    position: absolute;
+    top: 80rem;
+    right: 33.3333%;
+    transform: translateX(33%) translateY($translate-y) scale($scale);
+    transition: $transition transform;
+    transform-origin: bottom center;
+}
+
+#seaborn:hover::before{   
+    content: attr(data-tooltip);
+    color: #fff;
+    padding: .6rem 1.2rem;
+    border-radius: 1rem;
+    text-align: center;
+    width: max-content;
+    max-width:100%;
+    background: $tooltip-color;
+    border-bottom: solid 2.75px rgba($pallete_0,0.2);
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: $transition;
+    }
+
+#seaborn:hover::before,
+#seaborn:hover::after {
+    position: absolute;
+    top: 89rem;
+    left: 33.3333%;
+    transform: translateX(33%) translateY($translate-y) scale($scale);
+    transition: $transition transform;
+    transform-origin: bottom center;
+}
+
+#python:hover::before{   
+    content: attr(data-tooltip);
+    color: #fff;
+    padding: .6rem 1.2rem;
+    border-radius: 1rem;
+    text-align: center;
+    width: max-content;
+    max-width:100%;
+    background: $tooltip-color;
+    border-bottom: solid 2.75px rgba($pallete_0,0.2);
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: $transition;
+    }
+
+#python:hover::before,
+#python:hover::after {
+    position: absolute;
+    top: 89rem;
+    left: 50%;
+    transform: translateX(-50%) translateY($translate-y) scale($scale);
+    transition: $transition transform;
+    transform-origin: bottom center;
+}
+
+#bs4:hover::before{   
+    content: attr(data-tooltip);
+    color: #fff;
+    padding: .6rem 1.2rem;
+    border-radius: 1rem;
+    text-align: center;
+    width: max-content;
+    max-width:100%;
+    background: $tooltip-color;
+    border-bottom: solid 2.75px rgba($pallete_0,0.2);
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: $transition;
+    }
+
+#bs4:hover::before,
+#bs4:hover::after {
+    position: absolute;
+    top: 89rem;
+    right: 33.3333%;
+    transform: translateX(33%) translateY($translate-y) scale($scale);
+    transition: $transition transform;
+    transform-origin: bottom center;
+}
+
+#sql:hover::before{   
+    content: attr(data-tooltip);
+    color: #fff;
+    padding: .6rem 1.2rem;
+    border-radius: 1rem;
+    text-align: center;
+    width: max-content;
+    max-width:100%;
+    background: $tooltip-color;
+    border-bottom: solid 2.75px rgba($pallete_0,0.2);
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: $transition;
+    }
+
+#sql:hover::before,
+#sql:hover::after {
+    position: absolute;
+    top: 98rem;
+    left: 50%;
+    transform: translateX(-50%) translateY($translate-y) scale($scale);
+    transition: $transition transform;
+    transform-origin: bottom center;
+}
