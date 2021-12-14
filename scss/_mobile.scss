@@ -283,26 +283,29 @@
         min-width:100%;
 
     }}
-
+    
+// index.html landing page
     .one{
         #my-name{
             position: absolute;
-            transform: translateX(-115px) translateY(-650px);
+            transform: translateX(-240px) translateY(-632px);
             z-index:0;
             min-width:100%;
             
-            h1{
-            min-width:100%;
+            #landing-title{
+                display:inline-block;
+                width:400px;
+                min-width:100%;
+                font-size: 1.5rem;
+                background:rgba(#fff,0.03);
             }
-
-            
         }
     }
 
     .two{
         #mob-tweek{
             position: absolute;
-            transform: translateX(0px) translateY(-100px);
+            transform: translateX(0px) translateY(-135px);
             z-index:0;
 
         }
@@ -450,7 +453,7 @@
 
         .menu-button,
         .button-line{
-            top: -50vh;
+            top: -55vh;
             left: -15px;
         }
     
@@ -468,7 +471,7 @@
             position:absolute;
             align-items:center;
             justify-items: center;
-            transform:translateX(0) translateY(-40vh);
+            transform:translateX(0) translateY(-45vh);
     
         }
     
@@ -484,9 +487,10 @@
             grid-template-columns: 1fr;
     
             #yus{
+                transform:translateX(0) translateY(-45px);
                 left:2px;
-                width:200px;
-                height:200px;
+                width:175px;
+                height:175px;
                 grid-area: bioimage;
                 justify-items: center;
                 margin: auto;
@@ -495,6 +499,7 @@
             }
     
             #item-2{ 
+                transform:translateX(0) translateY(-60px);
                 grid-area: bio;
     
                 h2{
@@ -514,8 +519,10 @@
                 }
                 
             }
+
+            
     
-    }
+        }
         
     
     }
@@ -530,7 +537,7 @@
             text-align: center;
             top: 0px;
             margin-right:0%;
-            transform: translateX(0) translateY(5vh);
+            transform: translateX(0) translateY(-35px);
             z-index: 3;
             width:100%;
             
@@ -569,6 +576,24 @@
 
     }
 
+    #work-cloud{
+        position:absolute;
+        transform:translateX(0px) translateY(250px);
+        
+    
+        #cloud-container{
+            position:relative;
+            
+
+            #cloud-bottom{
+                position:absolute;
+                
+                
+
+            }
+        }
+    }
+
 
 
     //Contact.html Contact page
@@ -582,7 +607,7 @@
 
        h1{
            margin-top: 10rem;
-           transform:translateX(-158px) translateY(-180px);
+           transform:translateX(-120px) translateY(-210px);
            background:rgba(#fff,0.03);
            border-radius:30px;
            
@@ -592,7 +617,8 @@
             font-size: 1.5rem;
             left: 30%;
             margin-top: 3rem;
-            transform:translateX(-115px) translateY(-187px);
+            width:70%;
+            transform:translateX(-40px) translateY(-220px);
             background:rgba(#fff,0.02);
             border-radius:30px;
             }
@@ -607,7 +633,7 @@
     
             .contact_ {
                 position: relative;
-                transform:translateY(-200px);
+                transform:translateY(-240px);
 
                 left: 19%;
                 border-left: solid 2px rgba(#fff,0.12);
@@ -615,7 +641,7 @@
                 h3{
                     font-size: 1.2rem;
                     background:rgba($pallete_0,0.01);
-                    padding: 5px;
+                    padding: 1px;
                     width:23%;
                     border-radius:30px;
                     
@@ -625,7 +651,7 @@
                 p { 
                     font-size: 1rem;
                     background:rgba($pallete_0,0.01);
-                    padding: 2px;
+                    padding: 1px;
                     border-radius:30px;
                     width:75%;
                     
