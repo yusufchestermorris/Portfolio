@@ -1612,8 +1612,8 @@ section {
   }
   .one #my-name {
     position: absolute;
-    -webkit-transform: translateX(-240px) translateY(-632px);
-            transform: translateX(-240px) translateY(-632px);
+    -webkit-transform: translateX(-240px) translateY(-570px);
+            transform: translateX(-240px) translateY(-570px);
     z-index: 0;
     min-width: 100%;
   }
