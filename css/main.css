@@ -688,7 +688,7 @@ section {
   margin-top: 1rem;
 }
 
-.icons a {
+.icons #main-icons {
   position: absolute;
   top: 0;
   left: 0;
@@ -699,7 +699,7 @@ section {
   padding: 1.5rem;
 }
 
-.icons a:nth-child(1) {
+.icons #main-icons:nth-child(1) {
   color: #161616;
   left: 0;
   top: 475px;
@@ -707,7 +707,7 @@ section {
   z-index: 3;
 }
 
-.icons a:nth-child(2) {
+.icons #main-icons:nth-child(2) {
   color: #161616;
   left: 0;
   top: 375px;
@@ -715,7 +715,7 @@ section {
   z-index: 3;
 }
 
-.icons a:nth-child(3) {
+.icons #main-icons:nth-child(3) {
   color: #161616;
   left: 0;
   top: 275px;
@@ -723,7 +723,7 @@ section {
   z-index: 3;
 }
 
-.icons a:hover {
+.icons #main-icons:hover {
   color: #6bda53;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
@@ -1159,9 +1159,18 @@ section {
           justify-content: center;
 }
 
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
 .contact_pg {
-  height: 80%;
-  display: block;
+  display: fill;
   position: absolute;
   background-image: url(../img/bg-bottom.png);
   background-size: cover;
@@ -1171,7 +1180,16 @@ section {
   top: 40vh;
 }
 
-.contact_pg h1 {
+.contact_pg .title {
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact_pg .title h1 {
   position: relative;
   font-family: 'Readex Pro', sans-serif;
   text-transform: uppercase;
@@ -1180,11 +1198,14 @@ section {
   color: white;
   -ms-flex-line-pack: center;
       align-content: center;
-  left: 30%;
+  -webkit-transform: translateX(125px) translateY(-400px);
+          transform: translateX(125px) translateY(-400px);
+  border: solid 2px rgba(255, 255, 255, 0);
+  min-width: 161%;
   margin-top: 10rem;
 }
 
-.contact_pg h2 {
+.contact_pg .title h2 {
   position: relative;
   font-family: 'Readex Pro', sans-serif;
   text-transform: uppercase;
@@ -1193,36 +1214,79 @@ section {
   color: white;
   -ms-flex-line-pack: center;
       align-content: center;
-  left: 30%;
+  -webkit-transform: translateX(10px) translateY(-400px);
+          transform: translateX(10px) translateY(-400px);
+  border: solid 2px rgba(255, 255, 255, 0);
+  min-width: 272%;
   margin-top: 3rem;
 }
 
 .contact_pg #contact-footer {
-  cursor: default;
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact_pg #contact-footer #contact-social .contact-icons {
   position: relative;
-  margin: 0;
-  width: calc(100% + (1rem * 2));
-  min-width: 100%;
-  height: 100%;
-  z-index: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  left: 50%;
+  padding: 20px;
+}
+
+.contact_pg #contact-footer #contact-social .contact-icons:nth-child(1) {
+  color: #161616;
+  position: absolute;
+  -webkit-transform: translateX(-185px) translateY(-60px);
+          transform: translateX(-185px) translateY(-60px);
+  z-index: 1;
+}
+
+.contact_pg #contact-footer #contact-social .contact-icons:nth-child(2) {
+  color: #161616;
+  -webkit-transform: translateX(-55px) translateY(-60px);
+          transform: translateX(-55px) translateY(-60px);
+  position: absolute;
+  z-index: 1;
+}
+
+.contact_pg #contact-footer #contact-social .contact-icons:nth-child(3) {
+  color: #161616;
+  -webkit-transform: translateX(80px) translateY(-60px);
+          transform: translateX(80px) translateY(-60px);
+  position: absolute;
+  z-index: 1;
+}
+
+.contact_pg #contact-footer #contact-social .contact-icons:hover {
+  color: #6bda53;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .contact_pg #contact-footer .contact_ {
+  display: block;
   position: relative;
-  padding: 1rem;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  left: 30%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2.5rem 3.5rem;
   border-left: solid 2px rgba(255, 255, 255, 0.12);
 }
 
 .contact_pg #contact-footer .contact_ h3 {
+  position: relative;
   font-family: 'Readex Pro', sans-serif;
+  -webkit-transform: translateX(145px) translateY(-40px);
+          transform: translateX(145px) translateY(-40px);
   text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: 600;
@@ -1230,16 +1294,12 @@ section {
 }
 
 .contact_pg #contact-footer .contact_ p {
+  position: relative;
   font-family: 'Readex Pro', sans-serif;
+  -webkit-transform: translateX(-10px) translateY(-20px);
+          transform: translateX(-10px) translateY(-20px);
   text-transform: uppercase;
-  font-size: 1rem;
-  font-weight: 500;
-  color: white;
-}
-
-.contact_pg #contact-footer .contact_ .footer_ {
-  font-family: 'Readex Pro', sans-serif;
-  text-transform: uppercase;
+  padding: 1.5rem;
   font-size: 1rem;
   font-weight: 500;
   color: white;
