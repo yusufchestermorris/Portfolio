@@ -180,10 +180,42 @@ section{
         z-index: 1;
 
         h1{
+            position:absolute;
+            width:100%;
             text-decoration: none !important;
             color: rgba($pallete_0,100);
             font-weight:500;
+            top:0px;
 
+        }
+
+        h3 { 
+            position:absolute;
+            text-decoration: none !important;
+            color: rgba($pallete_0,100);
+            font-weight:600;
+            transform: translateX(120px) translateY(20px);
+            
+        }
+    
+        p { 
+            position:absolute;
+            text-decoration: none !important;
+            color: rgba($pallete_0,100);
+            font-weight:500;
+            bottom: 0px;
+            transform: translateX(0) translateY(-30px);
+    
+        }
+    
+        #tab-dash-text { 
+            position:absolute;
+            text-decoration: none !important;
+            color: rgba($pallete_0,100);
+            font-weight:500;
+            bottom: 0px;
+            transform: translateX(50px) translateY(-70px);
+    
         }
 
 

@@ -524,8 +524,9 @@ section {
 
 .three .text-bubble {
   height: 262px;
-  width: 50%;
+  width: 45%;
   position: relative;
+  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -542,9 +543,40 @@ section {
 }
 
 .three .text-bubble h1 {
+  position: absolute;
   text-decoration: none !important;
   color: #161616;
   font-weight: 500;
+  top: 0px;
+}
+
+.three .text-bubble h3 {
+  position: absolute;
+  text-decoration: none !important;
+  color: #161616;
+  font-weight: 600;
+  -webkit-transform: translateX(120px) translateY(20px);
+          transform: translateX(120px) translateY(20px);
+}
+
+.three .text-bubble p {
+  position: absolute;
+  text-decoration: none !important;
+  color: #161616;
+  font-weight: 500;
+  bottom: 0px;
+  -webkit-transform: translateX(0) translateY(-30px);
+          transform: translateX(0) translateY(-30px);
+}
+
+.three .text-bubble #tab-dash-text {
+  position: absolute;
+  text-decoration: none !important;
+  color: #161616;
+  font-weight: 500;
+  bottom: 0px;
+  -webkit-transform: translateX(50px) translateY(-70px);
+          transform: translateX(50px) translateY(-70px);
 }
 
 .three .text-bubble:hover {
@@ -582,7 +614,7 @@ section {
   display: -ms-flexbox;
   display: flex;
   height: auto;
-  width: auto;
+  width: 800px;
   gap: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1033,9 +1065,41 @@ section {
 }
 
 .pg-s3 .text-tile h1 {
+  position: absolute;
+  width: 100%;
   text-decoration: none !important;
   color: #161616;
   font-weight: 500;
+  top: 0px;
+}
+
+.pg-s3 .text-tile h3 {
+  position: absolute;
+  text-decoration: none !important;
+  color: #161616;
+  font-weight: 600;
+  -webkit-transform: translateX(120px) translateY(20px);
+          transform: translateX(120px) translateY(20px);
+}
+
+.pg-s3 .text-tile p {
+  position: absolute;
+  text-decoration: none !important;
+  color: #161616;
+  font-weight: 500;
+  bottom: 0px;
+  -webkit-transform: translateX(0) translateY(-30px);
+          transform: translateX(0) translateY(-30px);
+}
+
+.pg-s3 .text-tile #tab-dash-text {
+  position: absolute;
+  text-decoration: none !important;
+  color: #161616;
+  font-weight: 500;
+  bottom: 0px;
+  -webkit-transform: translateX(50px) translateY(-70px);
+          transform: translateX(50px) translateY(-70px);
 }
 
 .pg-s3 .text-tile:hover {
@@ -1553,8 +1617,9 @@ body {
   }
   .three .text-bubble {
     height: 262px;
-    width: 50%;
+    width: 45%;
     position: relative;
+    text-align: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1570,9 +1635,37 @@ body {
     z-index: 1;
   }
   .three .text-bubble h1 {
+    position: absolute;
     text-decoration: none !important;
     color: #161616;
     font-weight: 500;
+    top: 0px;
+  }
+  .three .text-bubble h3 {
+    position: absolute;
+    text-decoration: none !important;
+    color: #161616;
+    font-weight: 600;
+    -webkit-transform: translateX(120px) translateY(20px);
+            transform: translateX(120px) translateY(20px);
+  }
+  .three .text-bubble p {
+    position: absolute;
+    text-decoration: none !important;
+    color: #161616;
+    font-weight: 500;
+    bottom: 0px;
+    -webkit-transform: translateX(0) translateY(-30px);
+            transform: translateX(0) translateY(-30px);
+  }
+  .three .text-bubble #tab-dash-text {
+    position: absolute;
+    text-decoration: none !important;
+    color: #161616;
+    font-weight: 500;
+    bottom: 0px;
+    -webkit-transform: translateX(50px) translateY(-70px);
+            transform: translateX(50px) translateY(-70px);
   }
   .three .text-bubble:hover {
     background: rgba(22, 22, 22, 0.08);
@@ -1605,7 +1698,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     height: auto;
-    width: auto;
+    width: 800px;
     gap: 0;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1960,8 +2053,9 @@ body {
   }
   .three .text-bubble {
     height: 262px;
-    width: 50%;
+    width: 45%;
     position: relative;
+    text-align: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1977,9 +2071,37 @@ body {
     z-index: 1;
   }
   .three .text-bubble h1 {
+    position: absolute;
     text-decoration: none !important;
     color: #161616;
     font-weight: 500;
+    top: 0px;
+  }
+  .three .text-bubble h3 {
+    position: absolute;
+    text-decoration: none !important;
+    color: #161616;
+    font-weight: 600;
+    -webkit-transform: translateX(120px) translateY(20px);
+            transform: translateX(120px) translateY(20px);
+  }
+  .three .text-bubble p {
+    position: absolute;
+    text-decoration: none !important;
+    color: #161616;
+    font-weight: 500;
+    bottom: 0px;
+    -webkit-transform: translateX(0) translateY(-30px);
+            transform: translateX(0) translateY(-30px);
+  }
+  .three .text-bubble #tab-dash-text {
+    position: absolute;
+    text-decoration: none !important;
+    color: #161616;
+    font-weight: 500;
+    bottom: 0px;
+    -webkit-transform: translateX(50px) translateY(-70px);
+            transform: translateX(50px) translateY(-70px);
   }
   .three .text-bubble:hover {
     background: rgba(22, 22, 22, 0.08);
@@ -2012,7 +2134,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     height: auto;
-    width: auto;
+    width: 800px;
     gap: 0;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;

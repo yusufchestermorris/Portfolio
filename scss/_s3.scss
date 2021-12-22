@@ -38,8 +38,9 @@
 
 .text-bubble { 
     height: 262px;
-    width: 50%;
+    width: 45%;
     position:relative;
+    text-align: center;
     align-items: center;
     justify-content: center;
     background-color: rgba($pallete_3,0.068);
@@ -51,9 +52,40 @@
     z-index: 1;
 
     h1 { 
+        position:absolute;
         text-decoration: none !important;
         color: rgba($pallete_0,100);
         font-weight:500;
+        top:0px;
+    }
+
+    h3 { 
+        position:absolute;
+        text-decoration: none !important;
+        color: rgba($pallete_0,100);
+        font-weight:600;
+        transform: translateX(120px) translateY(20px);
+        
+    }
+
+    p { 
+        position:absolute;
+        text-decoration: none !important;
+        color: rgba($pallete_0,100);
+        font-weight:500;
+        bottom: 0px;
+        transform: translateX(0) translateY(-30px);
+
+    }
+
+    #tab-dash-text { 
+        position:absolute;
+        text-decoration: none !important;
+        color: rgba($pallete_0,100);
+        font-weight:500;
+        bottom: 0px;
+        transform: translateX(50px) translateY(-70px);
+
     }
 
 
@@ -91,7 +123,7 @@
 .container-3 {
     display: flex;
     height: auto;
-    width:auto;
+    width:800px;
     gap: 0;
     flex-wrap: wrap;
     flex-basis: auto;
