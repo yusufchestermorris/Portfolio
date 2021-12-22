@@ -1086,7 +1086,7 @@ section {
   position: absolute;
   text-decoration: none !important;
   color: #161616;
-  font-weight: 500;
+  font-weight: 400;
   bottom: 0px;
   -webkit-transform: translateX(0) translateY(-30px);
           transform: translateX(0) translateY(-30px);
@@ -1096,7 +1096,7 @@ section {
   position: absolute;
   text-decoration: none !important;
   color: #161616;
-  font-weight: 500;
+  font-weight: 400;
   bottom: 0px;
   -webkit-transform: translateX(50px) translateY(-70px);
           transform: translateX(50px) translateY(-70px);
