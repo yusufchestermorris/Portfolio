@@ -43,6 +43,11 @@ section{
     line-height: 1;
 
     .bg-top {
+        background-image: url('../img/bg-top.png');
+        color: set-text-color($primary-color);
+        //border:solid 5px black;
+        height:40vh;
+        width:100%;
         background-size: cover;
         background-repeat: no-repeat;
         position: absolute; 
@@ -321,7 +326,13 @@ section{
    
     
 
-    img {
+    #cloud-container {
+        background-image: url('../img/bg-bottom.png');
+        color: set-text-color($primary-color);
+        background-repeat: no-repeat;
+        //border:solid 5px black;
+        height:50vh;
+        width:100%;
         position: relative;
         background-size: cover;
         background-position: center;
