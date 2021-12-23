@@ -270,6 +270,9 @@
 
 // Smartphones
 @include mediaSm {
+    body{
+        overflow-x: hidden;
+    }
     main#home h1{
         margin-top:10vh;
     }
@@ -281,6 +284,7 @@
         top: 15vh;
         z-index:2;
         min-width:100%;
+        
 
     }}
     
@@ -288,7 +292,7 @@
     .one{
         #my-name{
             position: absolute;
-            transform: translateX(-240px) translateY(-570px);
+            transform: translateX(-240px) translateY(-540px);
             z-index:0;
             min-width:100%;
             
@@ -309,6 +313,26 @@
             z-index:0;
 
         }
+
+        .about-button{
+            align-items: center;
+            justify-content: center;
+            z-index:5;
+            position:relative;
+            
+            a {
+                color: $pallete_0;
+                position:absolute;
+                transform: translateX(-50px);
+                
+                &:hover {
+                    color:set-2nd-color($primary-color);
+                    @include Ease_out();
+                }
+    
+            }
+            
+        }  
 
         @import'mobtooltip';
     }
@@ -405,12 +429,40 @@
         }
     }
 
+    .four{
+        h1{
+            position:absolute;
+            transform: translateX(-115px) translateY(-150px);
+            }
+
+            #main-footer{
+                
+            .contact_ {
+                position:relative;
+                border:none;
+                h3{
+                    position:absolute;
+                    transform: translateX(-190px) translateY(-67px);
+                    border-left: solid 2px rgba(#fff,0.12);
+                    padding:20px 20px;      
+                }
+
+                p {
+                    position:absolute;
+                    transform: translateX(-190px) translateY(-0px);
+                    border-left: solid 2px rgba(#fff,0.12);
+                    padding: 30px 20px;
+                    width:auto; 
+                    
+                }}
+    }}
+
     #social {
         margin-top: 1rem;
 
         a{
             position: absolute;
-            transform: translateX(-16px) translateY(0px);
+            transform: translateX(-23px) translateY(0px);
             top:0;
             left:0;
             align-items: center;
@@ -534,7 +586,7 @@
             grid-template-columns: 1fr;
     
             #yus{
-                transform:translateX(0) translateY(-45px);
+                transform:translateX(0) translateY(-32px);
                 left:2px;
                 width:175px;
                 height:175px;
@@ -602,6 +654,18 @@
 
     // Work.html Project page
 
+    .page-container { 
+    min-height: 100%;
+    overflow-x: hidden;
+    
+    .work-head { 
+        display:flex;
+        position: absolute;
+        z-index: 1;
+        align-items: center;
+    }
+}
+
     #work-title{
         h1,
         h2{
@@ -611,6 +675,14 @@
             z-index:0;
         }
     }
+
+    .pg-s1{
+        .bg-top{
+            .bg-t{
+                    background-size:cover;
+                    overflow-x: hidden;
+                    //width:100%;
+    }}}
     
     .pg-s3{
     #Project_6{
@@ -620,8 +692,47 @@
     #more_3{
         transform:translateY(500px);
     }
+    .text-tile { 
+        height: 262px;
+        width: 350px;
+        position:relative;
+        align-items: center;
+        justify-content: center;
 
-    }
+        h1{
+            position:absolute;
+            width:95%;
+            font-weight:600;
+            font-size: 1.25rem;
+            top:0px;
+            transform: translateX(5px) translateY(0px);
+
+        }
+
+        h3 { 
+            position:absolute;
+            font-weight:600;
+            transform: translateX(80px) translateY(20px);
+            
+        }
+    
+        p { 
+            position:absolute;
+            font-weight:400;
+            bottom: 0px;
+            transform: translateX(0) translateY(0px);
+    
+        }
+    
+        #tab-dash-text { 
+            position:absolute;
+            font-weight:400;
+            bottom: 0px;
+            transform: translateX(10px) translateY(-20px);
+    
+        }
+
+    }}
 
     #work-cloud{
         position:absolute;
@@ -634,7 +745,7 @@
 
             #cloud-bottom{
                 position:absolute;
-                
+                overflow-x: hidden;
                 
 
             }
@@ -646,75 +757,44 @@
     //Contact.html Contact page
     
     .contact_pg{
+        overflow-x: hidden;
 
-        h1,
-       h2{
-           color:rgba($pallete_0,100);  
-        }
-
-       h1{
-           margin-top: 10rem;
-           transform:translateX(-120px) translateY(-210px);
-           background:rgba(#fff,0.03);
-           border-radius:30px;
-           
-        }
+        .title{
+            position: absolute;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
     
-        h2 { 
-            font-size: 1.5rem;
-            left: 30%;
-            margin-top: 3rem;
-            width:70%;
-            transform:translateX(-40px) translateY(-220px);
-            background:rgba(#fff,0.02);
-            border-radius:30px;
-            }
-    
-            #contact-footer{
-                cursor: default;
+            h1{
                 position: relative;
-                width: 100%;
-                min-width: 100%;
-                height:100%;
-                z-index: 0;
+                font-family: 'Readex Pro', sans-serif;
+                text-transform: uppercase;
+                font-size: 2rem;
+                font-weight: 600;
+                color: white;
+                align-content: center;
+                //transform: translateX(440px) translateY(0px);
+                transform: translateX(125px) translateY(-400px);
+                border:solid 2px rgba(255, 255, 255, 0);
+                min-width: 161%;
+                margin-top: 10rem;
+                }
     
-            .contact_ {
+            h2 { 
                 position: relative;
-                transform:translateY(-240px);
-
-                left: 19%;
-                border-left: solid 2px rgba(#fff,0.12);
-    
-                h3{
-                    font-size: 1.2rem;
-                    background:rgba($pallete_0,0.01);
-                    padding: 1px;
-                    width:23%;
-                    border-radius:30px;
-                    
-                
-                    
-                }
-                p { 
-                    font-size: 1rem;
-                    background:rgba($pallete_0,0.01);
-                    padding: 1px;
-                    border-radius:30px;
-                    width:75%;
-                    
-    
-                }
-    
-                .footer_ {
-                    font-size: 1rem;
-                }
-    
-            
+                font-family: 'Readex Pro', sans-serif;
+                text-transform: uppercase;
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: white;
+                align-content: center;
+                //transform: translateX(360px) translateY(0px);
+                transform: translateX(10px) translateY(-400px);
+                border:solid 2px rgba(255, 255, 255, 0);
+                min-width: 272%;
+                margin-top: 3rem;
             }
-    
         }
-        
-    }
     
     .menu-button,
         .button-line{
@@ -724,10 +804,10 @@
     li {
         position:relative;
         top:0px;
-        transform:translateX(0) translateY(10vh);
+        transform:translateX(-10) translateY(10vh);
     }
 
 
 
-}
+}}
 

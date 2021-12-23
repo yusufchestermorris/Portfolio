@@ -6,6 +6,7 @@
     font-family: 'Readex Pro', sans-serif;
 }
 
+
 body { 
     width: 100vw;
     height: 100vh;
@@ -159,7 +160,7 @@ section{
         a {
             color: $pallete_0;
             position:absolute;
-            border-right: 0%;
+            transform: translateX(-30px);
             
             &:hover {
                 color:set-2nd-color($primary-color);

@@ -197,7 +197,8 @@ section {
 .two .about-button a {
   color: #161616;
   position: absolute;
-  border-right: 0%;
+  -webkit-transform: translateX(-30px);
+          transform: translateX(-30px);
 }
 
 .two .about-button a:hover {
@@ -908,7 +909,7 @@ section {
 }
 
 .main {
-  overflow: auto;
+  overflow: hidden;
   padding-bottom: 50px;
 }
 
@@ -1751,6 +1752,9 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
   main#home h1 {
     margin-top: 10vh;
   }
@@ -1765,8 +1769,8 @@ body {
   }
   .one #my-name {
     position: absolute;
-    -webkit-transform: translateX(-240px) translateY(-570px);
-            transform: translateX(-240px) translateY(-570px);
+    -webkit-transform: translateX(-240px) translateY(-540px);
+            transform: translateX(-240px) translateY(-540px);
     z-index: 0;
     min-width: 100%;
   }
@@ -1782,6 +1786,27 @@ body {
     -webkit-transform: translateX(0px) translateY(-135px);
             transform: translateX(0px) translateY(-135px);
     z-index: 0;
+  }
+  .two .about-button {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 5;
+    position: relative;
+  }
+  .two .about-button a {
+    color: #161616;
+    position: absolute;
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+  .two .about-button a:hover {
+    color: #6bda53;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
   }
   .two #tableau:hover::before {
     content: attr(data-tooltip);
@@ -2247,13 +2272,37 @@ body {
             transform: translateX(5px) translateY(100px);
     z-index: 0;
   }
+  .four h1 {
+    position: absolute;
+    -webkit-transform: translateX(-115px) translateY(-150px);
+            transform: translateX(-115px) translateY(-150px);
+  }
+  .four #main-footer .contact_ {
+    position: relative;
+    border: none;
+  }
+  .four #main-footer .contact_ h3 {
+    position: absolute;
+    -webkit-transform: translateX(-190px) translateY(-67px);
+            transform: translateX(-190px) translateY(-67px);
+    border-left: solid 2px rgba(255, 255, 255, 0.12);
+    padding: 20px 20px;
+  }
+  .four #main-footer .contact_ p {
+    position: absolute;
+    -webkit-transform: translateX(-190px) translateY(0px);
+            transform: translateX(-190px) translateY(0px);
+    border-left: solid 2px rgba(255, 255, 255, 0.12);
+    padding: 30px 20px;
+    width: auto;
+  }
   #social {
     margin-top: 1rem;
   }
   #social a {
     position: absolute;
-    -webkit-transform: translateX(-16px) translateY(0px);
-            transform: translateX(-16px) translateY(0px);
+    -webkit-transform: translateX(-23px) translateY(0px);
+            transform: translateX(-23px) translateY(0px);
     top: 0;
     left: 0;
     -webkit-box-align: center;
@@ -2373,8 +2422,8 @@ body {
         grid-template-columns: 1fr;
   }
   #b #container-bio #yus {
-    -webkit-transform: translateX(0) translateY(-45px);
-            transform: translateX(0) translateY(-45px);
+    -webkit-transform: translateX(0) translateY(-32px);
+            transform: translateX(0) translateY(-32px);
     left: 2px;
     width: 175px;
     height: 175px;
@@ -2433,6 +2482,20 @@ body {
     font-size: 1.2 0.5rem;
     font-weight: 600;
   }
+  .page-container {
+    min-height: 100%;
+    overflow-x: hidden;
+  }
+  .page-container .work-head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   #work-title h1,
   #work-title h2 {
     position: relative;
@@ -2440,6 +2503,10 @@ body {
             transform: translateY(-80px);
     text-align: center;
     z-index: 0;
+  }
+  .pg-s1 .bg-top .bg-t {
+    background-size: cover;
+    overflow-x: hidden;
   }
   .pg-s3 #Project_6 {
     position: absolute;
@@ -2449,6 +2516,46 @@ body {
   .pg-s3 #more_3 {
     -webkit-transform: translateY(500px);
             transform: translateY(500px);
+  }
+  .pg-s3 .text-tile {
+    height: 262px;
+    width: 350px;
+    position: relative;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .pg-s3 .text-tile h1 {
+    position: absolute;
+    width: 95%;
+    font-weight: 600;
+    font-size: 1.25rem;
+    top: 0px;
+    -webkit-transform: translateX(5px) translateY(0px);
+            transform: translateX(5px) translateY(0px);
+  }
+  .pg-s3 .text-tile h3 {
+    position: absolute;
+    font-weight: 600;
+    -webkit-transform: translateX(80px) translateY(20px);
+            transform: translateX(80px) translateY(20px);
+  }
+  .pg-s3 .text-tile p {
+    position: absolute;
+    font-weight: 400;
+    bottom: 0px;
+    -webkit-transform: translateX(0) translateY(0px);
+            transform: translateX(0) translateY(0px);
+  }
+  .pg-s3 .text-tile #tab-dash-text {
+    position: absolute;
+    font-weight: 400;
+    bottom: 0px;
+    -webkit-transform: translateX(10px) translateY(-20px);
+            transform: translateX(10px) translateY(-20px);
   }
   #work-cloud {
     position: absolute;
@@ -2460,70 +2567,59 @@ body {
   }
   #work-cloud #cloud-container #cloud-bottom {
     position: absolute;
+    overflow-x: hidden;
   }
-  .contact_pg h1,
-  .contact_pg h2 {
-    color: #161616;
+  .contact_pg {
+    overflow-x: hidden;
   }
-  .contact_pg h1 {
+  .contact_pg .title {
+    position: absolute;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact_pg .title h1 {
+    position: relative;
+    font-family: 'Readex Pro', sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-transform: translateX(125px) translateY(-400px);
+            transform: translateX(125px) translateY(-400px);
+    border: solid 2px rgba(255, 255, 255, 0);
+    min-width: 161%;
     margin-top: 10rem;
-    -webkit-transform: translateX(-120px) translateY(-210px);
-            transform: translateX(-120px) translateY(-210px);
-    background: rgba(255, 255, 255, 0.03);
-    border-radius: 30px;
   }
-  .contact_pg h2 {
+  .contact_pg .title h2 {
+    position: relative;
+    font-family: 'Readex Pro', sans-serif;
+    text-transform: uppercase;
     font-size: 1.5rem;
-    left: 30%;
+    font-weight: 600;
+    color: white;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-transform: translateX(10px) translateY(-400px);
+            transform: translateX(10px) translateY(-400px);
+    border: solid 2px rgba(255, 255, 255, 0);
+    min-width: 272%;
     margin-top: 3rem;
-    width: 70%;
-    -webkit-transform: translateX(-40px) translateY(-220px);
-            transform: translateX(-40px) translateY(-220px);
-    background: rgba(255, 255, 255, 0.02);
-    border-radius: 30px;
   }
-  .contact_pg #contact-footer {
-    cursor: default;
-    position: relative;
-    width: 100%;
-    min-width: 100%;
-    height: 100%;
-    z-index: 0;
-  }
-  .contact_pg #contact-footer .contact_ {
-    position: relative;
-    -webkit-transform: translateY(-240px);
-            transform: translateY(-240px);
-    left: 19%;
-    border-left: solid 2px rgba(255, 255, 255, 0.12);
-  }
-  .contact_pg #contact-footer .contact_ h3 {
-    font-size: 1.2rem;
-    background: rgba(22, 22, 22, 0.01);
-    padding: 1px;
-    width: 23%;
-    border-radius: 30px;
-  }
-  .contact_pg #contact-footer .contact_ p {
-    font-size: 1rem;
-    background: rgba(22, 22, 22, 0.01);
-    padding: 1px;
-    border-radius: 30px;
-    width: 75%;
-  }
-  .contact_pg #contact-footer .contact_ .footer_ {
-    font-size: 1rem;
-  }
-  .menu-button,
-  .button-line {
+  .contact_pg .menu-button,
+  .contact_pg .button-line {
     top: -5vh;
     left: -40px;
   }
-  li {
+  .contact_pg li {
     position: relative;
     top: 0px;
-    -webkit-transform: translateX(0) translateY(10vh);
-            transform: translateX(0) translateY(10vh);
+    -webkit-transform: translateX(-10) translateY(10vh);
+            transform: translateX(-10) translateY(10vh);
   }
 }
 /*# sourceMappingURL=main.css.map */
